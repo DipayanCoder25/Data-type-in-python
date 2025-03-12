@@ -63,7 +63,7 @@ b2=float(input("Base 2 is "))
 h=float(input("Height is "))
 area =0.5*(b1+b2)*h
 print("Area is ",area)
-'''
+
 a =4
 b= 2
 c=5
@@ -72,3 +72,13 @@ x=int(input("Input x :"))
 y=int(input("Input y :"))
 ans =a*x*x+b*y*y*y+c*x+d
 print("Ans is :",ans)
+'''
+
+
+name =str(input("Enter your name : "))
+birthday_date=input("Your birthday date :")
+age =int(input("Enter your running age : "))
+
+print("Your birthday is on ",birthday_date)
+print("You will be :",age+1)
+
