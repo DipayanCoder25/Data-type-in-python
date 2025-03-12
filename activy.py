@@ -75,10 +75,10 @@ print("Ans is :",ans)
 '''
 
 
-name =str(input("Enter your name : "))
-birthday_date=input("Your birthday date :")
-age =int(input("Enter your running age : "))
-
-print("Your birthday is on ",birthday_date)
-print("You will be :",age+1)
+name=input("Your name :")
+date_of_born=input("Your birthday :")
+age=int(input("Your running age :"))
+agee=age+1
+print("Your birthday is on : ",date_of_born)
+print(f"You will reach {agee} years old! Hurrah {name}")
 
