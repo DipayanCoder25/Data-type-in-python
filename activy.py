@@ -72,13 +72,48 @@ x=int(input("Input x :"))
 y=int(input("Input y :"))
 ans =a*x*x+b*y*y*y+c*x+d
 print("Ans is :",ans)
+
+age=int(input("Enter your age: "))
+if age>=18:
+    print("You are eligable to vote")
+    print("You are inside of if condition")
+print("Your outside of if condition")
+    
+num=int(input("Enter a number"))
+if num>0:
+    print("Positive number")
+else:
+    print("Negative number") 
+       
+username=input("Enter username: ").lower()
+if username== "admin":
+    print("Login succesful done")
+else:
+    print("Login denied done")    
+    
+price=input("Enter price: ")
+sale_price=input("Enter sale price: ")
+if price<sale_price:
+    profit=sale_price-price
+    print("Profit is {0}".format(profit))
+else:
+    print("No profit")    
+     
+run=int(input("Enter the total run: "))
+ball=int(input("Enter the total balls faced : "))    
+strike_rate=(run/ball)*100
+if  strike_rate>=150:
+    print("Amazing performane {:2}".format(strike_rate))
+else:
+    print("Good try.Mybe do better next time {:2}".format(strike_rate))
 '''
-
-
-name=input("Your name :")
-date_of_born=input("Your birthday :")
-age=int(input("Your running age :"))
-agee=age+1
-print("Your birthday is on : ",date_of_born)
-print(f"You will reach {agee} years old! Hurrah {name}")
-
+a=int(input("Enter a number: "))
+b=int(input("Enter a number: "))
+c=int(input("Enter a number: "))  
+if a>b and a>c:
+    print("A is the largest of three integers")
+elif b>a and b>c:
+    print("B is the largest of three integers")
+else:
+    print("C is the largest")    
+      
