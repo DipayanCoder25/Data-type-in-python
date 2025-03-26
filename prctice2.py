@@ -73,7 +73,7 @@ final_amount = principal * (1 + (annual_rate / (times_compounded * 100))) ** (ti
 print("Initial Investment:", principal)
 print("Final Amount after", years, "years:", round(final_amount, 2))
 print("Total Interest Earned:", round(final_amount - principal, 2))
-'''
+
 month_number = int(input("Enter running month number: "))
 temp = int(input("Enter today's temperature: "))
 
@@ -116,4 +116,60 @@ elif month_number == 12 or month_number == 1 or month_number == 2:
 else:
     print("Invalid month number. Please enter a number between 1 and 12.")
 
+username=input("Enter username: ")
+gmail=input("Enter gmail: ")
+if username=="abc" or gmail=="abc@gmail.com":
+    print("Accepted")
+else:
+    print("Denied")
+    
+#home light control system
+motion_deteced=True
+is_night=False
+manual=True
+if motion_deteced and is_night:
+    print("Light is on (Motion detected Day time)")
+else:
+    print("Day time (NO need of light)")
+    
+if motion_deteced or manual:
+    print("Light is on (Motion or manul )")
+else:
+    print("Light off")  
+          
+if not manual:
+    if motion_deteced and is_night:
+        print("Light is on (Automated)")
+    else:
+        print("Light off (Automated)")
+else:
+    print("Manul override")        
 
+h=float(input("Enter height: "))
+w=float(input("Enter weight: "))
+bmi=w/(h*h)
+if bmi<18.5:
+    print(f"Your BMI is {bmi} and you are underweight")
+elif bmi>=18.5 and bmi<=24.9:
+    print(f"Your BMI is {bmi} and you are healthy")
+elif bmi>=30 and bmi<=34.9:
+    print(f"Your BMI is {bmi} and you are obese")
+else:
+    print(f"Your BMI is {bmi} and you are over unhealty")        
+    '''
+marks=int(input("Enter your marks here: "))
+if marks>=80 and marks<=100:
+    print("A+")
+elif marks>=70 and marks<=79:
+    print("A")        
+elif marks>=60 and marks<=69:   
+    print("A-")
+elif marks>=50 and marks<=59:   
+    print("B")
+elif marks>=40 and marks<=49:  
+    print("C")
+elif marks>=33 and marks<=39:
+    print("D")
+else:
+    print("You are a failure")
+                
