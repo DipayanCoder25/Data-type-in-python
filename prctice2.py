@@ -156,7 +156,7 @@ elif bmi>=30 and bmi<=34.9:
     print(f"Your BMI is {bmi} and you are obese")
 else:
     print(f"Your BMI is {bmi} and you are over unhealty")        
-    '''
+    
 marks=int(input("Enter your marks here: "))
 if marks>=80 and marks<=100:
     print("A+")
@@ -172,4 +172,84 @@ elif marks>=33 and marks<=39:
     print("D")
 else:
     print("You are a failure")
-                
+
+a=abs(int(-210))
+print(a)
+cnt=0
+# displaying number with abs
+for i in range(100):
+   
+    if i%2==0:
+        cnt+=1
+        continue
+    else:
+         print(a)
+     
+print(cnt)
+
+x=input("Enter a value: ")
+if type(x) is int:
+    print("True")
+else:
+    print("False")
+        
+
+num=[10,20,30,40,50.60]
+print(34 not in num)
+
+text="Mam"
+print("A" in text)
+
+dic={'Name':"Dip","Age":12}
+print('a' in dic)
+
+#preventing duplicates entries in a database
+data_base=["ID12","ID01","ID02"]
+new_entry="ID01"
+if new_entry not in data_base:
+    print("Entry added succesfully")
+else:
+    print("Entry already exist in data_base")    
+    
+#verifying strong passowrd
+new_passoword=["abcd","1234","Adminstrator"]
+passoword=input("Enter passowrd")
+if passoword not in new_passoword:
+    print("Passoword strong enough")
+else:
+    print("Password is weak.Make it strong")
+    
+a=5#0101
+b=3#0011
+print(a&b)
+print(a|b)
+print(a^b)
+print(a*b)  
+print(~b)
+print(a<<b)
+print(a>>b)
+
+markone=int(input("Enter mark: "))
+mark2=int(input("Enter mark 2:"))
+mark3=int(input("Enter mark 3: "))
+marks=markone+mark2+mark3
+marks=marks/3
+if marks>=80 and marks<=100:
+    print("A+")
+elif marks>=70 and marks<=79:
+    print("A")        
+elif marks>=60 and marks<=69:   
+    print("A-")
+elif marks>=50 and marks<=59:   
+    print("B")
+elif marks>=40 and marks<=49:  
+    print("C")
+elif marks>=33 and marks<=39:
+    print("D")
+else:
+    print("You are a failure")  
+    '''  
+a=5
+print(a<<1)
+print(a>>1)
+          
