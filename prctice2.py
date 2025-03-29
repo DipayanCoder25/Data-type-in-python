@@ -248,8 +248,21 @@ elif marks>=33 and marks<=39:
     print("D")
 else:
     print("You are a failure")  
-    '''  
-a=5
-print(a<<1)
-print(a>>1)
-          
+    
+a=5#0101
+print(a&1)
+'''
+
+num = input("Enter a character: ")
+
+if len(num) == 1:
+    if num.isalpha():
+        print(f"{num} is an alphabet.")
+    elif num.isdigit():
+        print(f"{num} is a number.")
+    elif num.isalnum():
+        print(f"{num} is an alphanumeric character.")
+    else:
+        print(f"{num} is a special character.")            
+else:
+    print("Please enter a single character.")          
