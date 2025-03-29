@@ -251,7 +251,7 @@ else:
     
 a=5#0101
 print(a&1)
-'''
+
 
 num = input("Enter a character: ")
 
@@ -265,4 +265,12 @@ if len(num) == 1:
     else:
         print(f"{num} is a special character.")            
 else:
-    print("Please enter a single character.")          
+    print("Please enter a single character.")    
+    '''
+a=input("Enter a character: ")
+ascii_value = ord(a)
+print(ascii_value)  
+
+
+
+          
