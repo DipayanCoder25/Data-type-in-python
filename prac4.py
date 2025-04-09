@@ -119,21 +119,38 @@ elif option==2:
           print("You bought a expensive plane.Weldone")
 else:
     print("Invalid option.Press 1 or 2")
-    '''
- # 
- 
-a=int(input("Enter a number:")) 
-if a<=10 and a>=20:
-    print("The age is between 10 and 20")
-else:
-    print("The age is not between 10 and 20")    
-    
-            
-  
-          
-    
-     
+   
+name = input("Enter your name here: ")
+gmail = input("Enter your gmail here: ")
+password = input("Enter your password here: ")
 
-               
-            
-                      
+# Check if any fields are empty and print them
+if name == "" or gmail == "" or password == "":
+    print("The following segment(s) are empty:")
+    if name == "":
+        print("- Name")
+    if gmail == "":
+        print("- Gmail")
+    if password == "":
+
+
+    
+    correct_password = "!QAZ@WSX"
+    if password == correct_password:
+        print("Registration Completed")
+    else:
+        print("Passoword doesn't match")
+else:
+    print("Something went wrong")
+    print("404")
+
+
+string1=input("Enter a string: ")
+string2=""
+for i in string1:
+    string2 = i+ string2
+print("The reversed string",string2)   
+print("The normal string",string1) 
+  '''
+for i in range(10,1,-1):
+    print(i)  
