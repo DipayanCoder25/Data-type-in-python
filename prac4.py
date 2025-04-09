@@ -88,7 +88,7 @@ elif electticity_unit >300:
     service_charge=200
     total_amount=amount+service_charge
     print(f'The total amount is {total_amount}')
-  '''
+ 
 print("What you want to ride? 1.Car or 2.Plane ")    
 option=input("Enter what you want to ride")
 if option==1:
@@ -113,12 +113,23 @@ elif option==2:
           
           print("You bought a normal plane")
       elif choice==2:
+          
           print("You bought a private jet.")
       else:
           print("You bought a expensive plane.Weldone")
 else:
     print("Invalid option.Press 1 or 2")
-              
+    '''
+ # 
+ 
+a=int(input("Enter a number:")) 
+if a<=10 and a>=20:
+    print("The age is between 10 and 20")
+else:
+    print("The age is not between 10 and 20")    
+    
+            
+  
           
     
      
